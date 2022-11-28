@@ -1,5 +1,5 @@
 // standard global variables
-var container, scene, camera, renderer, controls, stats;
+var container, scene, camera, renderer, controls;
 var clock = new THREE.Clock();
 
 init();
@@ -40,22 +40,22 @@ function init() {
 	
 	var orangTexture = new THREE.ImageUtils.loadTexture( 'images/orang.png' );
 	
-    var orangMaterial = new THREE.SpriteMaterial( { map: orangTexture, useScreenCoordinates: false } );
+    	var orangMaterial = new THREE.SpriteMaterial( { map: orangTexture, useScreenCoordinates: false } );
 	var sprite = new THREE.Sprite( orangMaterial );
 	sprite.position.set( -200, 85, 0 );
-	sprite.scale.set( 200, 250, 1.0 );
+	sprite.scale.set( 200, 250, 1 );
 	scene.add( sprite );
 	
 	var orangMaterial = new THREE.SpriteMaterial( { map: orangTexture, useScreenCoordinates: false } );
 	var sprite = new THREE.Sprite( orangMaterial );
 	sprite.position.set( -0, 85, 0 );
-	sprite.scale.set( 200, 250, 1.0 );
+	sprite.scale.set( 200, 250, 1 );
 	scene.add( sprite );
 	
 	var orangMaterial = new THREE.SpriteMaterial( { map: orangTexture, useScreenCoordinates: false } );
 	var sprite = new THREE.Sprite( orangMaterial );
 	sprite.position.set( 200, 85, 0 );
-	sprite.scale.set( 200, 250, 1.0 );
+	sprite.scale.set( 200, 250, 1 );
 	scene.add( sprite );
 }
 
@@ -67,7 +67,6 @@ function animate() {
 
 function update() {
 	controls.update();
-	stats.update();
 }
 
 function render() {
