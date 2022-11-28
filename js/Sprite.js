@@ -1,5 +1,5 @@
 // standard global variables
-var container, scene, camera, renderer, controls, stats;
+var container, scene, camera, renderer, controls;
 var clock = new THREE.Clock();
 
 init();
